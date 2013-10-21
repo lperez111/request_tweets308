@@ -1,0 +1,8 @@
+class CreateTweet < ActiveRecord::Migration
+  def change
+    create_table :tweets do |t|
+      t.integer :twitter_user_id
+      t.text :text
+    end
+  end
+end
